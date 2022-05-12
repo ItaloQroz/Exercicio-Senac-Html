@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+  </head>
+
+  <body>
+    <h1>Trabalhando com Formulários</h1>
+
+    <br />
+    <br />
+
+    <form>
+      <label for="txtNome">Nome</label>
+      <input
+        title="Digite Seu Nome"
+        type="text"
+        id="txtNome"
+        placeholder="DIGITE O NOME"
+        maxlength="10"
+        minlength="5"
+        required
+      />
+      <!--redonly-->
+      <br />
+      <!--value="Italo"-->
+      <br /><br />
+      <label for="txtSenha">Senha</label>
+      <input
+        title="Digite a Senha"
+        type="password"
+        id="txtSenha"
+        placeholder="DIGITE A SENHA"
+        maxlength="10"
+        minlength="3"
+        required
+      />
+      <br />
+      <br />
+
+      <label for="ifbFoto">Arquivo</label>
+      <input type="file" id="ifbFoto" title="Selecione Uma Foto" required />
+      <br />
+      <br />
+      <input type="radio" name="contato" id="telefone" id="telefone" />
+      <label for="contato">Telefone</label>
+      <input type="radio" name="contato" id="email" id="email" />
+      <label for="contato">Email</label>
+      <input type="radio" name="contato" id="carta" id="Carta" />
+      <label for="contato">Carta</label>
+
+      <h4>Cursos de Interesse</h4>
+
+      <input type="checkbox" id="ckbCss" id="ckbCss" />
+      <label for="ckbHtml">HTML</label>
+      <input type="checkbox" id="ckbCss" id="ckbCss" />
+      <label for="ckbCss">CSS</label>
+      <br /><br />
+      <label for="tinta">Tinta</label>
+      <input type="color" id="tinta" />
+      <br /><br />
+      <input type="range" min="10" max="900" />
+      <br /><br />
+      <input type="button" id="botao" />
+      <br />
+      <br />
+
+      <label for="txtDescricao">Digite Sua Solicitação</label>
+      <br />
+      <textarea name="" id="txtDescricao" cols="40" rows="5" readonly>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam aliquam vel aliquid eveniet praesentium reiciendis quidem quas veritatis iure, incidunt at repellat asperiores ratione reprehenderit voluptatem, nulla, inventore sed dignissimos.
+          Voluptatum reiciendis quo cum, sapiente, ipsum distinctio accusamus officiis reprehenderit magnam eaque atque? Ipsam a optio perferendis doloribus autem modi exercitationem voluptatum voluptates fugit nihil ipsa eligendi nemo, harum culpa.
+          Architecto velit, nam dolore obcaecati cum praesentium nihil, dicta sed earum ab corporis cupiditate accusantium neque dolorem quidem deserunt minima. Expedita vero, assumenda non blanditiis quasi facilis ad aut quas.
+          Excepturi necessitatibus quae dolor voluptatum reiciendis eius ab iure cupiditate libero minima fuga veniam sed aspernatur distinctio tenetur possimus, repellendus, molestias dolorem, saepe accusamus sequi exercitationem hic fugit. Ipsam, numquam?
+          Aspernatur natus est, quas quis veritatis cupiditate similique laborum possimus, nihil odit, tempora doloribus accusamus aliquid libero sunt quo exercitationem. Odio quam consectetur dolorum iste doloribus sint cum, modi optio!</textarea
+      >
+      <br /><br />
+
+      <label for="estado">Selecione um Estado</label>
+      <select id="estado">
+        <option value="SP" selected>São paulo</option>
+        <option value="RJ">Rio De Janeiro</option>
+        <option value="BR">Brasilia</option>
+      </select>
+      <br><br>
+
+      <input type="submit" name="Enviar" id="btnEnviar" value="Enviar Dados" />
+    </form>
+  </body>
+</html>
